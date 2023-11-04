@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Comment Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .input-section {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .results-section {
+            margin-top: 20px;
+        }
+
+        .result {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>YouTube Comment Sentiment Analysis</h1>
+        <div class="input-section">
+            <label for="video-link">Enter YouTube Video Link:</label>
+            <textarea id="video-link" placeholder="Paste video link here"></textarea>
+            <button id="analyze-button">Analyze</button>
+        </div>
+        <div class="results-section">
+            <h2>Results</h2>
+            <div class="result">
+                <span>Positive Comments:</span>
+                <span id="positive-comment-count">0</span>
+            </div>
+            <div class="result">
+                <span>Negative Comments:</span>
+                <span id="negative-comment-count">0</span>
+            </div>
+            <div class="result">
+                <span>Polarity:</span>
+                <span id="polarity-score">0.0</span>
+            </div>
+            <div class="result">
+                <span>Negativity:</span>
+                <span id="negativity-score">0.0</span>
+            </div>
+        </div>
+    </div>
+    <!-- You would need to include your JavaScript file here -->
+</body>
+</html>

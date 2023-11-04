@@ -11,6 +11,8 @@ youtube = build('youtube', 'v3', developerKey=API_KEY)
 # Replace 'YOUR_VIDEO_ID' with the video ID you want to extract comments from
 video_id = 'MJqExcMZLnM'
 
+# video_id = 'wLegCFsOi_E' 
+
 try:
     # Retrieve video comments
     comments = []
