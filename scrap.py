@@ -9,15 +9,15 @@ API_KEY = 'AIzaSyCCGlXOkctAd6FJaqad7yaDvxPrtG8Z2D4'
 youtube = build('youtube', 'v3', developerKey=API_KEY)
 
 # Replace 'YOUR_VIDEO_ID' with the video ID you want to extract comments from
-video_id = 'MJqExcMZLnM'
-
+video_id = 'JfYeqhTCrII'
+# cD4ntiKp0mk
+# JfYeqhTCrII
+# TuvjYqPvebg 
 # video_id = 'wLegCFsOi_E' 
-
 try:
     # Retrieve video comments
     comments = []
     nextPageToken = None
-
     while True:
         results = youtube.commentThreads().list(
             part='snippet',
@@ -47,11 +47,9 @@ try:
         
         # Write the header row
         writer.writeheader()
-
         # Write comment data
         for comment_info in comments:
             writer.writerow(comment_info)
-
     print('Comments saved to youtube_comments.csv')
 
 except Exception as e:

@@ -26,9 +26,6 @@ total_like_count = 0
 emojis_score = []
 
 from googletrans import Translator
-
-
-
 # out = translator.translate(' आप कैसे हैं ', dest='en')
 
 
